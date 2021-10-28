@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  font-size: 35px;
+  font-family: cinzel;
+  border-bottom: 1px solid #dddddd;
+  .menu-nav {
+    text-align: right;
+    a {
+      text-decoration: none;
+      color: #000;
+      font-size: 19px;
+      line-height: 40px;
+      margin: 0 10px;
+    }
+  }
+}
+
+main {
+  padding: 3% 20%;
+  img {
+    width: 100%;
+  }
+  .content-text {
+    text-align: center;
+    padding: 56px 0 20px;
+
+    span {
+      font-family: New York Extra Large;
+      font-size: 54px;
+      font-weight: 700;
+      line-height: 100%;
+    }
+
+    p {
+      font-family: monospace, "Courier New", Courier, monospace;
+      font-size: 30px;
+      line-height: 34px;
+      padding: 20px 0 42px;
+      border-bottom: 2px solid;
+    }
+  }
+}
+
+.all-items {
+  text-align: center;
+  span {
+    font-family: New York Extra Large;
+    font-size: 44px;
+    font-weight: 900;
+    padding: 20px;
+  }
+}
+
+.container {
+  h5 {
+    text-align: center;
+    padding: 25px 0 64px;
+    font-family: SF Pro Display;
+    font-weight: 600;
+    font-size: 22px;
+  }
+}
+
+footer {
+  background-color: #000;
+  .medium {
+    padding: 18px 0 100px;
+
+    span {
+      padding-right: 20px;
+      letter-spacing: 2px;
+    }
+  }
+
+  .note {
+    text-align: center;
+    padding-bottom: 32px;
+
+    b {
+      font-family: cinzel;
+      font-size: 30px;
+      // padding-bottom: 25px;
+    }
+
+    p {
+      padding: 2% 33% 3%;
+      font-size: 16px;
+      line-height: 23px;
+      font-family: New York Small;
+    }
+
+    .contact {
+      padding-bottom: 25px;
+
+      a {
+        padding-right: 20px;
+      }
+    }
+  }
+}
+
+/* tablet */
+@media screen and (min-width: 780px) and (max-width: 1024px) {
+  main {
+    padding: 0 10%;
+  }
+}
+
+/* mobile */
+@media screen and (max-width: 780px) {
+  header {
+    .navbar-branch {
+      font-size: 30px;
+    }
+  }
+
+  main {
+    padding: 10% 2% 0;
+
+    .content-text {
+      span {
+        font-size: 36px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+
+  footer {
+    .medium {
+      .hide {
+        display: none;
+      }
+
+      span {
+        padding-right: 10px;
+      }
+    }
+    .note {
+      p {
+        padding: 8% 14%;
+        font-size: 14px;
+      }
+
+      .contact {
+        padding-bottom: 15%;
+      }
+    }
+  }
+}
